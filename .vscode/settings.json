@@ -1,0 +1,21 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "Escolar ",
+            "database": "escolar",
+            "username": "root",
+            "password": ""
+        }
+    ],
+    "vsicons.presets.foldersAllDefaultIcon": true,
+    "vsicons.presets.hideFolders": false,
+    "explorer.compactFolders": false
+}

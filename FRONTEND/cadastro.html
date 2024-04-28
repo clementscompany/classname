@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/fichaNew.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./icons/font/bootstrap-icons.css">
+    <title>Ficha de Inscrição</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="ttlo">
+                <img src="./IMG/palmeira (3).png" alt="logo">
+                <p>A verdade vos libertará</p>
+            </div>
+            <div class="">
+                <h2 class="titulo1">Instituto Médio Politecnico João Paulo II</h2>
+                <h2 class="titulo1">Cadastre-se</h2>
+            </div>
+
+            <div class="responseText">
+                
+            </div>
+
+            <div class="dados" id="dataReciver">
+                <!-- Receber os dados -->
+            </div>
+        </div>
+    </header>
+    <div class="conteiner">
+        <form action="" id="form" method="POST">
+            <div class="contem">
+                <label for="nome">Nome Completo</label>
+                <div class="input">
+                    <input id="nome" name="nomeCompleto" type="text" placeholder="Digete o nome...">
+                </div>
+            </div>
+
+            <div class="contem">
+                <label for="bi">Nº de Bilhete de Identidade</label>
+                <div class="input">
+                    <input id="bi" name="bilhete" type="text" placeholder="Digete o seu nº de Bilhete...">
+                </div>
+            </div>
+
+            <div class="contem">
+                <label for="telefone">Telefone</label>
+                <div class="input">
+                    <input id="telefone" name="telefone" type="tel" placeholder="Digete o seu número de telefone...">
+                </div>
+            </div>
+
+            <div class="contem">
+                <label for="data">Data de Nascimento</label>
+                <div class="input">
+                    <input id="data" name="dataNascimento" type="date">
+                </div>
+            </div>
+            <div class="contem">
+                <label for="senha">Senha</label>
+                <div class="input">
+                    <input id="senha" name="senha" type="password" autocomplete="off" placeholder="Digete uma senha...">
+                </div>
+            </div>
+            <div class="contem">
+                <label for="conf">Confirmar senha</label>
+                <div class="input">
+                    <input id="conf" name="conf" type="password" placeholder="Confirme a senha...">
+                </div>
+            </div>
+
+            <div class="contem1">
+                <label for="cursos">Cursos</label>
+                <select name="curso" id="cursos">
+                    <option value="" class="titulo0">
+                        Selecione um curso
+                    </option>
+                    <option value="Ciências Físicas e Biologicas">
+                        Ciências Físicas e Biologicas
+                    </option>
+                    <option value="Ciências Economicas e Juridicas">
+                        Ciências Economicas e Juridicas
+                    </option>
+                    <option value="Comunicação Social">
+                        Comunicação Social
+                    </option>
+                    <option value="Contabilidade e Gestão">
+                        Contabilidade e Gestão
+                    </option>
+                    <option value="Desenho e Projecto">
+                        Desenho e Projecto
+                    </option>
+                    <option value="Electricidade e Instalações Electricas">
+                        Electricidade e Instalações Electricas
+                    </option>
+                    <option value="Electrónica">
+                        Electrónica
+                    </option>
+                    <option value="Informática">
+                        Informática
+                    </option>
+                </select>
+            </div>
+            <div class="contem1">
+                <label for="classe">Classe</label>
+                <select name="classe" id="classe">
+                    <option value="">
+                        Escolhe uma classe
+                    </option>
+                    <option value="7ª_Classe">
+                        7ª_Classe
+                    </option>
+                    <option value="8ª_Classe">
+                        8ª_Classe
+                    </option>
+                    <option value="9ª_Classe">
+                        9ª_Classe
+                    </option>
+                    <option value="10ª_Classe">
+                        10ª_Classe
+                    </option>
+                    <option value="11ª_Classe">
+                        11ª_Classe
+                    </option>
+                    <option value="12ª_Classe">
+                        12ª_Classe
+                    </option>
+                    <option value="13ª_Classe">
+                        13ª_Classe
+                    </option>
+                </select>
+            </div>
+            <div class="contem1">
+                <label for="sexo">Género</label>
+                <select name="genero" id="sexo">
+                    <option value="">
+                        Selecione seu género
+                    </option>
+                    <option value="Femenino">
+                        Femenino
+                    </option>
+                    <option value="Masculino">
+                        Masculino
+                    </option>
+                </select>
+            </div>
+            <div class="btn">
+                <button type="submit" name="cadastrarButton" onclick="insvrever()">Enviar</button>
+            </div>
+        </form>
+
+        <article>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quia nisi libero earum ab fugit aspernatur sint, dignissimos voluptate! Aperiam reprehenderit accusamus sunt est cumque possimus officiis aut amet consequuntur.</p>
+        </article>
+    </div>
+    <script src="./js/cadastro.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,253 @@
+.header {
+    display: flex;
+    gap: 16px;
+    align-items: self-start;
+    flex-wrap: wrap;
+    margin: 12px auto;
+    width: calc(100% - 22px);
+    height: auto;
+    box-shadow: 0 2px 1px var(--border--);
+    border: 1px solid var(--border--);
+    border-radius: 10px;
+    user-select: none;
+    padding: 12px;
+}
+
+.header > .ttlo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    user-select: none;
+}
+
+.header > .ttlo > p {
+    color:var(--text--);
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.header img {
+    width: 100px;
+    height: 90px;
+    display: block;
+}
+.conteiner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin: 30px 14px;
+    border: 2px solid var(--border--);
+    border-radius: 10px;
+    width: 98%;
+    height: 70%;
+}
+form {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: auto auto;
+    margin-top: 5px;
+    column-gap: 20px;
+    padding: 16px;
+}
+.contem {
+    display: block;
+    padding: 5px 5px;
+    margin-top: 20px;
+    width: 300px;
+    height: min-content;
+}
+.contem > .input {
+    min-width: 280px;
+    border-radius: 10px;
+    margin: 2px 0px 0px 0px;
+}
+.contem> .input > input {
+    width: 100%;
+    padding: 12px ;
+    margin: 0px;
+    border: none;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid var(--border--);
+}
+.contem> .input > input:focus{
+    outline: 1px solid var(--focus--);
+}
+.contem > .input>input::placeholder {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--text--);
+}
+.contem1 {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 5px;
+    margin-top: 20px;
+    width: 300px;
+    height: min-content;
+}
+.contem1  select {
+    width: 100%;
+    padding: 12px ;
+    margin: 0px;
+    border: none;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid var(--border--);
+}
+.contem1  select:focus{
+    outline: 1px solid var(--focus--);
+}
+.btn {
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 5px;
+    width: 300px;
+    margin-top: 40px;
+    height: min-content;
+}
+.btn > button {
+    font-size: 18px;
+    font-weight: 500;
+    color:var(--branca--);
+    height: 41px;
+    min-width: 240px;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    margin: 2px 0px 0px 0px;
+    cursor: pointer;
+    background-color: var(--darck--);
+}
+.btn > button:focus{
+    outline: 1px solid var(--focus--); 
+}
+@keyframes ani {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+@media screen and (max-width:800px) {
+    header {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        width: 100%;
+        height: 10%;
+    }
+
+    .header h1 {
+        font-size: 20px;
+    }
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 3px 9px;
+        padding: 2.5px;
+        border-radius: 10px;
+        width: 100%;
+        height: auto;
+        background: #d0cfd0;
+    }
+
+    .header img {
+        border-radius: 50%;
+        background: linear-gradient(-45deg, #eeddee, #ddffee);
+        width: 80px;
+        height: 60px;
+    }
+}
+@media(max-width:800px) {
+    .conteiner {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 2.5px;
+        margin: 35px 10px;
+        border: 2px solid #4b4a4b;
+        border-radius: 8px;
+        width: 98%;
+        height: max-content;
+    }
+
+    form {
+        width: min-content;
+        height: max-content;
+    }
+
+    .btn {
+        position: sticky;
+        display: flex;
+        flex-direction: column;
+        padding: 5px 5px;
+        width: 300px;
+        height: min-content;
+    }
+    .inputCopie{
+        position: relative;
+        margin-bottom: 12px;
+    }
+}
+label{
+    font-size: 11pt;
+    font-weight: bold;
+}
+
+article{
+    padding: 0 12px;
+}
+.visualizar{
+    padding: 6px 44px;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--darck--);
+    color: var(--branca--);
+    font-weight: bold;
+    margin: 12px 0;
+    cursor: pointer;
+
+}
+.visualizar:focus{
+    outline: 1px solid var(--focus--);
+}
+.inputCopie{
+    position: relative;
+    margin-top: 12px;
+}
+.inputCopie input{
+    border: 1px solid var(--border--);
+    padding: 5px;
+    border-radius: 6px;
+    outline: none;
+}
+.inputCopie button{
+    background-color: var(--darck--);
+    padding: 5px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+.inputCopie button i{
+    color: var(--branca--);
+}
+.dados{
+    display: block;
+}
+
+.responseText{
+    margin: 12px;
+    padding: 12px;
+    border-radius: 6px;
+}

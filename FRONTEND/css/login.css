@@ -1,0 +1,113 @@
+.formDataContainer{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content{
+    position: relative;
+}
+.form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+.reciverForms{
+    position: relative;
+}
+.reciverForms .form1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 340px;
+    padding: 22px 6px;
+    border-radius: 6px;
+    box-shadow: 0 3px 2px var(--border--), 4px 1px 2px var(--border--);
+    gap: 22px;
+    border-top: 1px solid var(--border--);
+    border-left: 1px solid var(--border--);
+    animation: camingForm .5s ;
+}
+@keyframes camingForm {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 0;
+    }
+}
+.form1 .inputBox{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.form1 input{
+    border: 1px solid var(--border--);
+    padding: 12px 12px;
+    border-radius: 6px;
+}
+.form1 input:focus{
+    outline: 2px solid var(--focus--);
+}
+.button{
+    background-color: var(--darck--);
+    color: var(--branca--);
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.button:focus{
+    outline: 2px solid var(--focus--);
+}
+.niveis{
+    display: flex;
+    justify-content: center;
+    gap: 44px;
+    background-color: var(--focus--);
+    width: 340px;
+    border-radius: 6px;
+    padding: 6px;
+}
+.niveis span i{
+    font-size: 22pt;
+    color: var(--branca--);
+}
+.niveis span i.active{
+  color: var(--verde--);
+}
+.textError{
+    font-weight: bold;
+    padding: 12px 0;
+}
+
+.link{
+    display: flex;
+    flex-direction: column;
+    padding: 6px;
+}
+.link span{
+    font-weight: 500;
+    font-size: 11pt;
+}
+.link a{
+    text-decoration: none;
+    color: var(--verde--);
+    font-weight: bold;
+}
+.aceito{
+    display: flex;
+    align-items: center;
+    width: 100px;
+    padding: 4px;
+    border-radius: 6px;
+    gap: 4px;
+    border: 1px solid var(--border--);
+}

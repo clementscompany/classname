@@ -1,0 +1,620 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+}
+button{
+    cursor: pointer;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+    padding-top: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    overflow-y: auto;
+    max-height: 100%;
+}
+.sidebar-header {
+    padding: 15px;
+    text-align: center;
+}
+.menu {
+    list-style-type: none;
+}
+
+.menu li {
+    padding: 10px;
+    color: #f2f2f2;
+    margin: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: first baseline;
+    gap: 12px;
+}
+.menu li.active{
+    background-color: #555;
+}
+.menu > li:hover{
+    background-color: #555;   
+}
+
+/* Content */
+.content {
+    flex: 1;
+    padding: 20px;
+    margin-left: 250px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Menu Toggle Button */
+.menu-toggle {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.menu-toggle:focus {
+    outline: none;
+}
+
+/* Tabela */
+    .table-container {
+        overflow-x: auto;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        animation: cammingCard .2s linear;
+    }
+
+    table th, table td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    table th {
+        background-color: #f2f2f2;
+        color: #333;
+    }
+    table tr > td > img{
+        width: 22px;
+        height: 22px;
+        border-radius: 6px;
+    }
+    table tr > td > a {
+        color: #333;
+        font-weight: bold;
+        text-decoration: none;
+    }
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+}
+
+.login-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    max-width: 400px;
+    min-width: 320px;
+    width: 400px;
+    padding-bottom: 33px;
+}
+
+.login-box h2 {
+    margin-bottom: 20px;
+    color: #333; 
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+  
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: none;
+}
+  
+  /* CSS */
+.login-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #555;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+.login-button:hover {
+    background-color: #777;
+}
+#errorText{
+    margin-top: 22px;
+    border-radius: 6px;
+    padding: 12px;
+}
+.tabeleButton{
+    padding: 10px 33px;
+    width: 100%;
+    border: none;
+    background-color: orange;
+    color: #000;
+    font-weight: bold;
+    margin: 0 auto;
+    border-radius: 6px;
+}
+/* //// */
+.dashboard-info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 22px;
+    background-color:#333;
+    padding: 12px;
+    border-radius: 6px;
+    color: #f2f2f2;
+}
+
+.card {
+    width: 200px;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+  
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 18px;
+    font-weight: bold;
+}
+.search-bar {
+    display: flex;
+    max-width: calc(100% - 22px);
+    margin: 12px auto;
+}
+#resultSeatch{
+    max-width: calc(100% - 22px);
+    margin: 12px auto;
+}
+#resultSeatch > *{
+    margin: 12px auto;
+    padding: 12px;
+    background-color: #ccc;
+    border-radius: 6px;
+    cursor: pointer;
+}
+#resultSeatch > div > ul{
+    background-color: #f2f2f2;
+    padding: 12px;
+    border-radius: 6px;
+}
+#resultSeatch > div > ul > li{
+    display: block;
+    list-style: none;
+    animation: cammingCard .2s linear;
+}
+.search-bar input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+.search-bar button {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 0 5px 5px 0;
+    background-color: #f2f2f2;
+    color: #333;
+    cursor: pointer;
+}
+.search-bar button:hover {
+    background-color: #e0e0e0;
+}
+.optionTabele {
+    width: 120px;
+}
+.optionTabele button {
+    display: inline; 
+}
+
+.optionTabele > button{
+    padding: 6px;
+    border-radius: 6px;
+    border: none;
+}
+.optionTabele > button:nth-of-type(3){
+    background-color: dodgerblue;
+    color: #f2f2f2;
+}
+.optionTabele > button:nth-of-type(1){
+    background-color: #ee4545;
+    color: #f2f2f2;
+}
+.optionTabele > button:nth-of-type(2){
+    background-color: orange;
+    color: #000;
+}
+
+.student-profile {
+    background-color: #cccc;
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px #0000001a;
+    max-width: 450px;
+    min-width: 320px;
+    padding-bottom: 44px;
+    animation: cammingCard .2s linear;
+}
+
+.profile-header {
+    text-align: center;
+}
+
+.profile-header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.profile-details {
+    margin-top: 20px;
+}
+
+.detail {
+    margin-bottom: 10px;
+}
+
+.label {
+    font-weight: bold;
+}
+
+/* Para a cor do texto nos detalhes */
+.value {
+    color:#333;
+}
+.navBarr{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 12px;
+    background-color: #333;
+    width: 100%;
+}
+.navBarr > button{
+    background-color: transparent;
+    color: #fff;
+    padding: 6px;
+    border: none;
+}
+.navBarr  > button:hover{
+    color: #ccc;
+}
+.modalContainer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    padding: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modalTabele{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    padding: 22px;
+    padding-top: 100px;
+    overflow-y: auto;
+}
+.caedDelete{
+    padding: 44px;
+    border-radius: 8px;
+    background-color: #f2f2f2;
+    box-shadow: 0 3px 2px #8686863a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+    animation: cammingCard .2s linear;
+}
+.caedDelete > span{
+    color: #333;
+    font-size: 13pt;
+}
+.buttonsOption{
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+.buttonsOption > button{
+    padding: 6px 33px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.buttonsOption > button:nth-of-type(1){
+    background-color: #ec3838;
+    color: #f2f2f2;
+    font-weight: bold;
+}
+.buttonsOption > button:nth-of-type(1):hover{
+    background-color: #cf3333;
+}
+.buttonsOption > button:nth-of-type(2){
+    border: 1px solid #ccc;
+    color: gray;
+    font-weight: bold;
+}
+.buttonsOption > button:nth-of-type(2):hover{
+    color:#ccc;
+}
+/* Edit Form */
+.editForm {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 22px;
+    animation: cammingCard .2s linear;
+  }
+
+  .divInputLabel {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 15px;
+  }
+
+  .divInputLabel label {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+
+  .divInputLabel input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    outline: none;
+  }
+  .divInputLabel input:focus{
+    outline: 1px solid #2387eb8a;
+  }
+  .buttonsOption {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .buttonsOption button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+  }
+
+  .buttonsOption button:hover {
+    background-color: #45a049;
+  }
+
+  .confirmationCard {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 20px;
+    animation: cammingCard .2s linear;
+  }
+
+  .confirmationCard p {
+    margin: 0;
+  }
+
+  .success {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+  }
+
+  .error {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+  }
+
+
+  @keyframes cammingCard {
+    from{
+        opacity: 0;
+        transform: scale(0.1);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1.1);
+    }
+}
+#btnRefresh {
+    border-radius: 50%;
+    width: 33px;
+    height: 33px;
+    background-color: #4CAF50; 
+    color: white;
+    border: none; 
+    cursor: pointer; 
+    margin: 12px 0;
+}
+
+
+#btnRefresh:hover {
+    background-color: #45a049;
+}
+.ContainerNotifications{
+    position: fixed;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    display: flex;
+}
+.boxInput{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 12px;
+    border-radius: 6px;
+    padding: 6px;
+    border: 1px solid #0000001a;
+}
+.boxInput:hover{
+    background-color: #0000001a;
+}
+.contantSelection{
+  position: relative;
+  flex: 1;
+  min-width: 320px;
+  display: flex;
+}
+.contantSelection > ul{
+    list-style: none;
+    width: 500px;
+    overflow-y: auto;
+}
+.contantSelection > ul li{
+    margin: 12px;
+    padding: 6px;
+    border: 1px solid #0000001a;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.contantSelection > ul li:hover{
+    background-color: #0000001a;
+}
+#message{
+    border: 1px solid #0000001a;
+    outline: none;
+    padding: 12px;
+    margin: 12px;
+    width: 320px;
+    border-radius: 6px;
+}
+.sendBtn{
+    margin: 12px;
+    width: 320px;
+    height: 44px;
+    border-radius: 6px;
+    border: none;
+    background-color: orange;
+    color: #000;
+    font-weight: bold;
+}
+.headerNotofications{
+    background-color: #333;
+    padding: 12px;
+    color: #fff;
+    font-weight: bold; 
+}
+.topicNotifications{
+    background-color: #333;
+    padding: 12px;
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.contentRigth-Not{
+    padding: 12px;
+    position: relative;
+    padding-top: 60px;
+    border-left: 1px solid #0000001a;
+    flex: 1 ;
+}
+.messages{
+    background-color: dodgerblue;
+    color: #fff;
+    padding: 12px;
+    border-radius: 22px;
+    width: calc(100% - 50px);
+}
+#responseText{
+    padding: 0 12px;
+}
+#closeNotificationsModal{
+    width: 200px;
+    height: 33px;
+    border: 1px solid #0000001a;
+    background-color: transparent;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 6px;
+    margin: 12px auto;
+    transition: .3s ease;
+}
+#closeNotificationsModal:hover{
+    border: 1px solid #fff;
+    
+}

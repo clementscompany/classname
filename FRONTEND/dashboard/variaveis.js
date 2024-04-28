@@ -1,0 +1,14 @@
+export const backendURL = "http://localhost/fernando/BACKEND";
+export const matriculaURL = "http://localhost/fernando/BACKEND/php/matricula.php";
+export const reconfirmaraURL = "http://localhost/fernando/BACKEND/php/reconfirmar.php";
+export const chatURL = "http://localhost/fernando/BACKEND/php/chat.php";
+export const SourceEventURL = "http://localhost/fernando/BACKEND/php/config.php";
+export const getMessageURL = "http://localhost/fernando/BACKEND/php/getmessage.php";
+export const deleteURL = "http://localhost/fernando/BACKEND/php/delete.php";
+export const updateURL = "http://localhost/fernando/BACKEND/php/update.php";
+export const IMGendpoint = "http://localhost/fernando/BACKEND/php/upload/img/";
+export const DOCendpoint = "http://localhost/fernando/BACKEND/php/upload/docs/";
+export const APIendPoint = "/php/api.php";
+export const loginURL = "http://localhost/fernando/FRONTEND/login.html";
+export const dashboardURL = "http://localhost/fernando/BACKEND/php/dashboard.php";
+export const notificationdURL = "http://localhost/fernando/BACKEND/php/notification.php";

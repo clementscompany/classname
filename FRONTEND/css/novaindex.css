@@ -1,0 +1,267 @@
+:root {
+    --color-light: #f8f5f8;
+    --color-dark: rgba(33, 33, 34, 0.2);
+    --color-1: #59595b;
+    --color-2: #414040;
+    --color-3: #292828;
+    --color-3: #2a2929;
+    --color-4: #6d684d;
+    --color-5: #1e232e;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 14px;
+    margin: 5px 15px;
+    border-radius: 6px;
+    background: var(--color-1);
+    width: 98%;
+}
+
+.conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-wrap: wrap;
+    gap: 10px;
+    color: var(--color-light);
+
+}
+
+.logo {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    font-size: 1.2em;
+}
+
+.logo>img {
+    height: 30px;
+    width: 50px;
+}
+
+.voltar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-3);
+    border: 1px solid var(--color-5);
+    border-radius: 6px;
+    width: 50px;
+    height: 30px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.voltar:hover {
+    background: var(--color-2);
+}
+
+.voltar a i {
+    font-size: 1.4em;
+    background: linear-gradient(-45deg, #29e7fc, #989797);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.right {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    left: 0;
+    border: 1px solid var(--color-5);
+    border-radius: 6px;
+    background: var(--color-3);
+    cursor: pointer;
+    transition: 5s;
+}
+
+.right>:hover {
+    background: var(--color-2);
+}
+
+.right a {
+    font-size: 1.2em;
+    color: var(--color-light);
+}
+
+/*---------------------------- fim do header --------------------*/
+hr {
+    margin: 5px 15px;
+    width: 98%;
+}
+
+.content h1 {
+    font-family: 'Times New Roman', Times, serif;
+    color: #4f4e4f;
+    font-size: 22px;
+}
+
+.content h2 {
+    font-family: 'Times New Roman', Times, serif;
+    color: #4f4e4f;
+    font-size: 22px;
+}
+
+.dados {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    flex-wrap: wrap;
+    margin: 12px 18px;
+    padding: 4px;
+}
+
+.curso {
+    padding: 5px;
+}
+
+.curso label {
+    font-size: 1.6em;
+}
+
+.curso .curso {
+    text-decoration: underline;
+    font-size: 1em;
+}
+
+.tcs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 5px;
+}
+
+.turma label {
+    font-size: 1.6em;
+}
+
+.turma .turma {
+    text-decoration: underline;
+    font-size: 1em;
+}
+
+.classe label {
+    font-size: 1.6em;
+}
+
+.classe .classe {
+    text-decoration: underline;
+    font-size: 1em;
+}
+
+.sala label {
+    font-size: 1.6em;
+}
+
+.sala .sala {
+    text-decoration: underline;
+    font-size: 1em;
+}
+
+/*--------------------------------------------- fim do conteudo ----------------------------------------*/
+/*main e acessorios com o caption da tabela*/
+main {
+    position: relative;
+    display: block;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /*border: 1px solid var(--colo-dark-80);
+    border-radius: 10px;*/
+    padding: 5px;
+    margin: 20px 14px;
+    width: 98%;
+    height: auto;
+}
+
+.hh3 {
+    font-family: 'Times New Roman', Times, serif;
+    color: #4f4e4f;
+    font-size: 28px;
+    margin: 10px 10px;
+}
+
+
+/*tabela e seus itens*/
+table {
+    border-collapse: collapse;
+    empty-cells: hide;
+    font-size: 16px;
+    padding: 5px;
+    margin: 4px 14px;
+    width: 98%;
+}
+
+thead th {
+    font-weight: 500;
+    text-align: center;
+    user-select: none;
+    color: #f8fafc;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 8px;
+    background: var(--color-3);
+}
+
+td {
+    text-align: center;
+    font-weight: 400;
+    color: var(--color-light);
+    padding: 4px;
+    background: #4f4e4f;
+    user-select: none;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 8px;
+}
+
+td i {
+    font-size: 1.2em;
+    background: linear-gradient(-45deg, #29e7fc, #989797);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*mexendo a responsividade*/
+@media screen and (max-width:800px) {
+    body {
+        width: 100%;
+    }
+
+    #header {
+        width: 100%;
+        margin: 2px 2px;
+        padding: 2px;
+    }
+
+    .conteiner {
+        margin-top: 2%;
+        margin-left: 1px;
+        padding: 2px;
+        width: 100%;
+    }
+
+    table {
+        margin: 1px 1px;
+        padding: 2px 2px;
+        width: 100%;
+        overflow: hidden;
+    }
+}

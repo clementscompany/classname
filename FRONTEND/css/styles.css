@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'calibri', sans-serif;
+}
+:root{
+    --darck--:#1c1c1c;
+    --branca--:#fff;
+    --border--:#6b676728;
+    --text--:#1c1c1cd5;
+    --focus--:rgba(60, 150, 240, 0.562);
+    --verde--:green;
+    --load--:orangered;
+    --red--:red;
+}
+.cardNotify{
+    padding: 12px;
+    margin: 12px;
+    border-radius: 6px;
+    border: 1px solid var(--base--);
+}
