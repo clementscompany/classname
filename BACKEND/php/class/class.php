@@ -3,7 +3,12 @@ session_start();
 class sistema {
 
     /// Variaveis globais e privadas do sistema!
-
+    private $conn;
+    private $dbHost = "localhost";
+    private $dbUsername = "root";
+    private $dbPassword = "";
+    private $dbName = "escolar";
+    private $idUser;
 
     ///conectar com o banco de dados!
     public function conectar(){

@@ -1,11 +1,11 @@
 <?php
-header("Access-Control-Allow-Origin: *");
-header("Access-Control-Allow-Methods: POST, PUT, GET, DELETE, OPTIONS");
-header("Access-Control-Allow-Headers: Content-Type");
-header('Content-Type: text/event-stream');
-header('Cache-Control: no-cache');
-header('Connection: keep-alive');
-require_once './class/class.php';
+    header("Access-Control-Allow-Origin: *");
+    header("Access-Control-Allow-Methods: POST, PUT, GET, DELETE, OPTIONS");
+    header("Access-Control-Allow-Headers: Content-Type");
+    header('Content-Type: text/event-stream');
+    header('Cache-Control: no-cache');
+    header('Connection: keep-alive');
+    require_once './class/class.php';
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
     $dataInput = filter_input_array(INPUT_POST);
