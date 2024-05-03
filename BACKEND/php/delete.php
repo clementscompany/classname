@@ -11,8 +11,21 @@
     switch($dataInput['path']){
         case "/aluno":
             $response['delete'] = $sistema->eliminarAluno($dataInput['idDelete']);
+                    break;
+
+        case "/matricula":
+            $response['delete'] = $sistema->eliminarMatricula($dataInput['idDelete']);
+                    break;
+
+        case "/reconfirmar":
+            $response['delete'] = $sistema->eliminarReconf($dataInput['idDelete']);
+                    break;
+            
+        default:
+                break;            
+            
     }
 
     echo json_encode($response);
 
-?>
+

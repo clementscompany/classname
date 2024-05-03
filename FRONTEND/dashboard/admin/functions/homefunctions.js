@@ -24,6 +24,7 @@ async function home() {
     if (getData.ok) {
       let data = await getData.json();
       mainContainer.innerHTML = HomePage(data);
+    
     } else {
       mainContainer.querySelector("#container").innerHTML =
         "Erro: " + getData.statusText;
@@ -261,7 +262,7 @@ async function home() {
         deleteButtons.forEach(button => {
           button.addEventListener("click", () => {
             let id = button.getAttribute("data-delete");
-            let path = "/aluno";
+            let path = "/reconfirmar";
             deleteData(id, path);
           });
         });
@@ -306,7 +307,7 @@ async function home() {
         deleteButtons.forEach(button => {
           button.addEventListener("click", () => {
             let id = button.getAttribute("data-delete");
-            let path = "/aluno";
+            let path = "/matricula";
             deleteData(id, path);
           });
         });

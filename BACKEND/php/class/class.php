@@ -412,13 +412,6 @@ public function eliminarAluno($id){
     $sql = $this->conn->prepare("DELETE from inscricao WHERE inscricao.id = ?");
     $sql->bind_param("s", $id);
     if ($sql->execute()) {
-      $sql2 = $this->conn->prepare("DELETE from matriculas WHERE id_aluno = ?");
-      $sql3 = $this->conn->prepare("DELETE from reconfirmar WHERE idUser = ?");
-      $sql2->bind_param("s", $id);
-      $sql3->bind_param("s", $id);
-      $sql2->execute();
-      $sql3->execute();
-
       $response['sucess'] = "Dados eliminados com sucesso!";
     } else{
       $response['error'] = "Erro ao eliminar os dados! tente novamente";
@@ -426,6 +419,38 @@ public function eliminarAluno($id){
     return $response;
   }
 
+}
+
+public function eliminarMatricula($id){
+  if ($this->conectar()) {
+      $response = [];
+
+      $sql = $this->conn->prepare("DELETE FROM matriculas WHERE id_aluno = ?");
+      $sql->bind_param("i", $id);
+      if ($sql->execute()) {
+          $response['sucess'] = "Eliminado com Sucesso!";
+      } else{
+        $response['error'] = "Erro ao aliminar!";
+      }
+
+      return $response;
+  }
+}
+
+public function eliminarReconf($id){
+  if ($this->conectar()) {
+      $response = [];
+      $sql = $this->conn->prepare("DELETE from reconfirmar WHERE idUser = ?");
+      $sql->bind_param("i", $id);
+
+      if ($sql->execute()) {
+        $response['sucess'] = "Eliminado com Sucesso!";
+      } else{
+        $response['error'] = "Erro!";
+      }
+
+      return $response;
+  }
 }
 ////Atualizar dados 
 public function updateData(

@@ -60,6 +60,7 @@ function deleteData(id,path){
                     closeModal();
                 }
             }
+
             
         } else{///else error MEssage
             modalContainer.innerHTML = messageSucess("Erro: " + error);
